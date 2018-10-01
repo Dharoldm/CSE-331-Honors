@@ -1,0 +1,63 @@
+-----TEST 1-----
+Type Error, not a valid website
+Back:  www.google.com -> www.reddit.com -> www.reddit.com/r/wheredidthesodago/ -> www.reddit.com/r/dataisbeautiful/ 
+Capacity: 4
+Forward:  Empty Stack
+
+-----TEST 2-----
+Back:  www.google.com -> www.gmail.com 
+Capacity: 2
+Forward:  www.egr.msu.edu 
+Capacity: 2
+Sup shawty
+Sup shawty
+Back:  www.google.com 
+Capacity: 2
+Forward:  www.reddit.com/r/ethereum -> www.google.com -> www.gmail.com 
+Capacity: 8
+
+-----TEST 3-----
+Back:  www.google.com -> www.gmail.com -> www.google.com -> www.reddit.com/r/ethereum 
+Capacity: 4
+Forward:  Empty Stack
+Type Error, not a valid website
+Back:  www.google.com 
+Capacity: 2
+Forward:  Empty Stack
+Back:  www.google.com 
+Capacity: 2
+Forward:  Empty Stack
+
+-----TEST 4-----
+Back:  www.google.com -> www.gmail.com -> www.facebook.com -> www.reddit.com/r/ethereum 
+Capacity: 4
+Forward:  Empty Stack
+Back:  www.google.com 
+Capacity: 2
+Forward:  www.reddit.com/r/ethereum -> www.facebook.com -> www.gmail.com 
+Capacity: 4
+Type Error, not a valid website
+Back:  www.google.com -> www.gmail.com 
+Capacity: 2
+Forward:  Empty Stack
+Back:  www.google.com 
+Capacity: 2
+Forward:  www.gmail.com 
+Capacity: 2
+
+-----TEST 5-----
+Back:  www.google.com -> www.gmail.com -> www.facebook.com -> www.reddit.com/r/ethereum 
+Capacity: 4
+Forward:  Empty Stack
+Back:  www.google.com 
+Capacity: 2
+Forward:  www.reddit.com/r/ethereum -> www.facebook.com -> www.gmail.com 
+Capacity: 4
+Back:  www.google.com -> www.gmail.com -> www.facebook.com 
+Capacity: 4
+Forward:  www.reddit.com/r/ethereum 
+Capacity: 2
+Back:  www.google.com 
+Capacity: 2
+Forward:  www.reddit.com/r/ethereum -> www.facebook.com -> www.gmail.com 
+Capacity: 4
